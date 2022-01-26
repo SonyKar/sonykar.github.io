@@ -1,8 +1,24 @@
+@import url(grid.css);
+
 body {
   background-color: #f2f2f2;
-  color: #111111;
+  color: #000;
   margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+img {
+  user-select: none;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
 }

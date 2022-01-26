@@ -1,10 +1,17 @@
+import { React, Fragment } from 'react';
+
 import './App.css';
+import Footer from './Footer/Footer';
+import MainPage from './MainPage/MainPage';
+import Navbar from './Navbar/Navbar';
 
 function App() {
   return (
-    <main>
-
-    </main>
+    <Fragment>
+      <Navbar />
+      <MainPage />
+      <Footer />
+    </Fragment>
   );
 }
 

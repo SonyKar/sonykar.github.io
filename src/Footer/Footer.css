@@ -1,0 +1,16 @@
+@media screen and (min-width: 1200px) {
+  footer p {
+    font-size: 1.1vw;
+  }
+}
+
+footer {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+footer p {
+  margin: 0;
+}

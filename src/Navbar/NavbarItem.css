@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+  .navbar__item {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .navbar__logo {
+    margin: 30px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar__item {
+    font-size: 16px;
+    margin-top: 7px;
+  }
+  .navbar__logo {
+    margin: 20px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar__item {
+    font-size: 1.1vw;
+    margin-top: 0.8vw;
+  }
+  .navbar__logo {
+    margin: 1.5vw 0;
+  }
+}
+.navbar__item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  user-select: none;
+}
+.navbar__item.active {
+  color: #630094;
+}
+.navbar__item:not(.navbar__logo):not(.active):hover {
+  color: #888;
+}
+.navbar__logo {
+  font-weight: 700;
+}
