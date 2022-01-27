@@ -1,17 +1,25 @@
-import { React, Fragment } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
 
 import './App.css';
+import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
 import MainPage from './MainPage/MainPage';
-import Navbar from './Navbar/Navbar';
+import ProjectsPage from './ProjectsPage/ProjectsPage';
 
 function App() {
   return (
-    <Fragment>
+    <Router>
       <Navbar />
-      <MainPage />
+      <Routes>
+        <Route path='*' element={<MainPage />}></Route>
+        <Route exact path='/projects' element={<ProjectsPage />}></Route>
+      </Routes>
       <Footer />
-    </Fragment>
+    </Router>
   );
 }
 

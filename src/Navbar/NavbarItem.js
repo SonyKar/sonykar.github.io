@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { Link } from 'react-router-dom';
 
 import './NavbarItem.css';
 
@@ -8,7 +8,7 @@ function NavbarItem(props) {
     classes += props.logo ? " navbar__logo" : "";
 
     return (
-        <a href={props.href} className={classes}>{props.children}</a>
+        <Link to={props.href} className={classes}>{props.children}</Link>
     );
 }
 

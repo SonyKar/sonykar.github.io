@@ -1,31 +1,22 @@
 @media screen and (max-width: 768px) {
-  .navbar__desktop {
-    display: none;
-  }
   .myEmail {
     display: none;
   }
-  .navbar__burger.opened {
+  .navbar__desktop.opened {
     transform: translateX(0);
   }
-  .navbar__burger.opened + .backdrop {
+  .navbar__desktop.opened + .backdrop {
     opacity: 1;
     visibility: visible;
   }
-  .navbar__burger {
+  .navbar__desktop {
     width: 250px;
-    height: 100vh;
     padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
     right: 0;
     transition: all 0.3s ease;
     background-color: #f1f1f1;
     z-index: 2;
+    transform: translateX(100%);
   }
   .backdrop {
     background: rgba(0, 0, 0, 0.5);
@@ -49,14 +40,7 @@
 @media screen and (min-width: 768px) {
   .navbar__desktop {
     width: 20%;
-    height: 100vh;
     padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
     left: 0;
   }
   .myEmail {
@@ -66,9 +50,6 @@
     font-size: 16px;
     text-decoration: none;
     color: inherit;
-  }
-  .navbar__burger {
-    display: none;
   }
   .burgerButton {
     display: none;
@@ -82,9 +63,15 @@
     font-size: 1.1vw;
   }
 }
-.navbar__burger {
-  transform: translateX(100%);
-}
 .backdrop {
   opacity: 0;
+}
+.navbar__desktop {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
 }

@@ -1,5 +1,3 @@
-import { React } from 'react';
-
 import './H1.css';
 
 function H1(props) {
