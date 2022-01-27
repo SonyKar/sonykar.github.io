@@ -1,3 +1,13 @@
+@media screen and (max-width: 600px) {
+  .linkButton:hover {
+    color: #ccc;
+  }
+}
+@media screen and (min-width: 600px) {
+  .linkButton:hover {
+    color: #630094;
+  }
+}
 @media screen and (min-width: 992px) {
   .linkButton {
     font-size: 16px;
@@ -13,7 +23,4 @@
 .linkButton {
   text-decoration: none;
   color: inherit;
-}
-.linkButton:hover {
-  color: #630094;
 }
