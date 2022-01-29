@@ -1,0 +1,4 @@
+.projectsPage__projectList {
+  display: flex;
+  flex-wrap: wrap;
+}

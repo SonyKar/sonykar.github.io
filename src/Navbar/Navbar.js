@@ -9,9 +9,9 @@ import NavbarExternalLink from './NavbarExternalLink';
 function Navbar() {
     const [navbarOpened, setNavbarOpened] = useState(false);
 
-    let opened = 'navbar__burger';
+    let opened = '';
     if (navbarOpened) {
-        opened += ' opened';
+        opened = 'opened';
     }
 
     let navbarToggleHandler = () => {
@@ -33,10 +33,10 @@ function Navbar() {
                     {/* <NavbarExternalLink href="#">LinkedIn</NavbarExternalLink> */}
                 </div>
             </nav>
-            <a href="mailto:sa.caraganciu@gmail.com" className="myEmail">sa.caraganciu@gmail.com</a>
-
-            <FontAwesomeIcon icon={faBars} onClick={navbarToggleHandler} className='burgerButton' />
             <div className='backdrop' onClick={navbarToggleHandler}></div>
+            <FontAwesomeIcon icon={faBars} onClick={navbarToggleHandler} className='burgerButton' />
+
+            <a href="mailto:sa.caraganciu@gmail.com" className="myEmail">sa.caraganciu@gmail.com</a>
         </Fragment >
     );
 }

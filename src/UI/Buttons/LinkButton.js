@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import './LinkButton.css';
 
 function LinkButton(props) {
     return (
-        <a href={props.href} className="linkButton">{props.children}</a>
+        <Link to={props.href} className="linkButton">{props.children}</Link>
     );
 }
 
