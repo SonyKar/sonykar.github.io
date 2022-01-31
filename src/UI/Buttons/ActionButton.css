@@ -1,0 +1,25 @@
+@media screen and (max-width: 1200px) {
+  .actionButton {
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .actionButton {
+    font-size: 1vw;
+    padding: 1vw 3vw;
+  }
+}
+
+.actionButton {
+  background-color: #111;
+  border: 1px solid #111;
+  color: #fff;
+  font-family: "Montserrat";
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.actionButton:hover {
+  background-color: transparent;
+  color: #111;
+}

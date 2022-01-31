@@ -38,7 +38,6 @@
 .projectCard {
   position: relative;
   cursor: pointer;
-  padding: 20px;
   box-sizing: border-box;
 }
 .projectCard img {

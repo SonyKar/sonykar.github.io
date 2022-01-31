@@ -19,7 +19,7 @@ function MainPage() {
                         <H1 className="mainPage__header" bold>Alexandrin <br /> Caraganciu</H1>
                         <div className='mainPage__buttons'>
                             <p><LinkButton href="/projects">View My Work &#62;&#62;</LinkButton></p>
-                            <p><LinkButton href="#">About Me &#62;&#62;</LinkButton></p>
+                            <p><LinkButton href="/about">About Me &#62;&#62;</LinkButton></p>
                         </div>
                     </div>
                 </Container>

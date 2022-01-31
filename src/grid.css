@@ -8,3 +8,10 @@
     width: 50%;
   }
 }
+.col-6 {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.col-12 {
+  width: 100%;
+}

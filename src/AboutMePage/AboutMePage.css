@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+  .aboutMe__header {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .aboutMe__header {
+    margin-bottom: -40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutMe__shortReview p {
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutMe__shortReview p {
+    letter-spacing: 0.1vw;
+    font-size: 1vw;
+  }
+  .aboutMe__getInTouch a {
+    font-size: 1.1vw;
+  }
+  .aboutMe__getInTouch h2 {
+    font-size: 1.3vw;
+  }
+}
+
+.aboutMe__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.aboutMe__header {
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+.aboutMe__header + img {
+  position: relative;
+  z-index: 1;
+}
+.aboutMe__shortReview p {
+  line-height: 1.5;
+}
+.cvButton {
+  margin-top: 50px;
+}
+.aboutMe__getInTouch p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+.aboutMe__getInTouch a {
+  color: #111;
+  text-decoration: none;
+}
