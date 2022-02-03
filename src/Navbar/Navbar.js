@@ -23,9 +23,9 @@ function Navbar() {
             <nav className={'navbar__desktop ' + opened}>
                 <div>
                     <FontAwesomeIcon icon={faTimes} onClick={navbarToggleHandler} className='burgerButton' />
-                    <NavbarItem href="/" logo>Alexandrin Caraganciu</NavbarItem>
-                    <NavbarItem href="/projects">Projects</NavbarItem>
-                    <NavbarItem href="/about">About me</NavbarItem>
+                    <NavbarItem href="/" onClick={navbarToggleHandler} logo>Alexandrin Caraganciu</NavbarItem>
+                    <NavbarItem href="/projects" onClick={navbarToggleHandler}>Projects</NavbarItem>
+                    <NavbarItem href="/about" onClick={navbarToggleHandler}>About me</NavbarItem>
                 </div>
                 <div>
                     <NavbarExternalLink href="https://github.com/SonyKar">Github</NavbarExternalLink>

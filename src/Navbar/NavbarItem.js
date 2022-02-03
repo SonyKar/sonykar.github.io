@@ -8,7 +8,7 @@ function NavbarItem(props) {
     classes += props.logo ? " navbar__logo" : "";
 
     return (
-        <Link to={props.href} className={classes}>{props.children}</Link>
+        <Link to={props.href} onClick={props.onClick} className={classes}>{props.children}</Link>
     );
 }
 
